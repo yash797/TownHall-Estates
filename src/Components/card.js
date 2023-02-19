@@ -2,16 +2,14 @@ import React from "react";
 import { useState } from "react";
 import { FaHeart } from "react-icons/fa";
 import { BiBed, BiBath, BiArea } from "react-icons/bi";
-  
 
 const House1 = ({ house }) => {
-    const [isLiked, setIsLiked] = useState(false);
-    const [isFavorite, setIsFavorite] = useState(false);
+  const [isLiked, setIsLiked] = useState(false);
+  const [isFavorite, setIsFavorite] = useState(false);
 
-
-    const handleFavoriteClick = () => {
-      setIsFavorite(!isFavorite);
-    };
+  const handleFavoriteClick = () => {
+    setIsFavorite(!isFavorite);
+  };
   return (
     <div class="p-2">
       <div class="rounded overflow-hidden shadow-lg hover:shadow-2xl transition">
@@ -33,9 +31,6 @@ const House1 = ({ house }) => {
             Move By: <span className="text-violet-600">{house.movingDate}</span>
           </div>
 
-          {/* <p class="text-gray-700 text-base">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.
-        </p> */}
           <div className="text-md font-semibold max-w-[260px] text-gray-500">
             {house.address}
             <br></br>
@@ -64,22 +59,7 @@ const House1 = ({ house }) => {
               <div className="text-sm">{house.surface}</div>
             </div>
           </div>
-          {/* <div className="text-lg font-semibold text-violet-600 mb-4">
-            $ {house.price} <span className="text-xs text-gray-400">/month</span>
-          </div> */}
         </div>
-
-        {/* <div class="grid grid-cols-3 gap-x-0 pt-4 pb-2 text-center">
-          <div class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-            {house.location}
-          </div>
-          <div class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-            {house.country}
-          </div>
-          <div class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-            {house.type}
-          </div>
-        </div> */}
       </div>
     </div>
   );

@@ -15,7 +15,6 @@ const Search = () => {
   return (
     <div className="px-[30px] py-6 mt-10 -mb-6 max-w-full flex flex-col lg:flex-row justify-between gap-4 lg:gap-x-3 relative lg:-top-4 lg:shadow-1 bg-white lg:bg-transparent lg:backdrop-blur rounded-lg">
       <StateDropDown />
-      {/* //Draw a vertical line */}
       <div className="hidden lg:block w-[1px] h-[60px] bg-gray-300"></div>
       <MoveIn />
       <div className="hidden lg:block w-[1px] h-[60px] bg-gray-300"></div>
@@ -30,7 +29,7 @@ const Search = () => {
         onClick={() => {
           handleClick();
         }}
-        className="bg-violet-700 hover:bg-violet-800 transition px-3 lg:max-w-[140px] h-14 rounded-lg flex justify-center items-center text-white text-lg"
+        className="bg-violet-700 hover:bg-violet-800 transition px-3 lg:max-w-[140px] h-14 rounded-lg flex justify-center items-center text-white text-lg "
       >
         <RiSearch2Line className="mr-1" />
         Search
