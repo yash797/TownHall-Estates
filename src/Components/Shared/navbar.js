@@ -35,7 +35,7 @@ import { NavLink, useLocation } from "react-router-dom";
     ];
 
     return (
-      <div className="fixed w-full bg-gray-100 bg-opacity-80 z-10 top-0 py-1 backdrop-filter backdrop-blur px-10 -ml-12 md:-ml-32 md:px-32 flex flex-wrap xl:flex-nowrap items-center justify-between ">
+      <div className="fixed w-full bg-gray-100 bg-opacity-60 z-10 top-0 py-1 backdrop-filter backdrop-blur px-10 -ml-12 md:-ml-32 md:px-32 flex flex-wrap xl:flex-nowrap items-center justify-between ">
         <NavLink to="/">
           <img
             src={logo}
@@ -68,7 +68,7 @@ import { NavLink, useLocation } from "react-router-dom";
                   onClick={handleClick}
                   className={
                     location.pathname === item.link
-                      ? `text-violet-500 font-primary font-medium text-lg px-5 text-center mt-6 xl:my-auto hover:text-blue-400`
+                      ? `text-violet-900 font-primary font-medium text-lg px-5 text-center mt-6 xl:my-auto hover:text-blue-400`
                       : `text-white font-primary font-medium text-lg px-5 text-center transition duration-500 ease-in-out hover:text-blue-500 mt-6 xl:my-auto`
                   }
                 >

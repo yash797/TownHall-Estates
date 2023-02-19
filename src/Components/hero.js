@@ -14,11 +14,11 @@ const Hero = () => {
           <h1 className="text-lg lg:text-xl font-medium leading-none mb-6 text-violet-500">
             Welcome To{" "}
           </h1>
-          <h1 className="text-violet-800 break-words font-semibold text-5xl -mt-3">
+          <h1 className="text-rose-500 break-words font-semibold md:text-7xl -mt-2 text-5xl">
             TownHall Estates
           </h1>
 
-          <p className="max-w-[480px] mb-8 text-blue-900 mt-4 ">
+          <p className="max-w-[480px] mb-8 text-blue-900 mt-6 ">
             We are the keys to your home 😊
           </p>
         </div>
@@ -28,7 +28,7 @@ const Hero = () => {
           type="text"
           placeholder="Search by Name"
           value={search.query}
-          className=" border-2 border-gray-300 bg-white h-10 px-5 pr-16 rounded-md text-sm focus:outline-none ring-2 ring-violet-300 text-violet-700"
+          className=" border-2 border-gray-300 h-10 px-5 pr-16 rounded-md text-sm focus:outline-none ring-2 ring-violet-300 text-violet-700"
           onChange={handleSearch}
         />
       </div>

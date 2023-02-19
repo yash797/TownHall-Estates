@@ -17,16 +17,16 @@ const HouseList = () => {
 
   if (houses.length < 1) {
     return (
-      <div className="text-center text-3xl text-gray-400 mt-48">
+      <div className="text-center text-3xl text-gray-600 mt-48">
         Sorry, nothing was found.
       </div>
     );
   }
 
   return (
-    <section className="mb-20">
+    <section className="mb-20 ">
       <div className="container21">
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-20">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-20 mt-32 md:-lg-8">
           {search.query === ""
             ? houses.map((house, index) => <House1 house={house} />)
             : !search.list.length

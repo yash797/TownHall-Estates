@@ -7,7 +7,10 @@ const PropertyDropdown = () => {
   const { property, setProperty, properties } = useContext(HouseContext);
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <Menu as="div" className="dropdown relative">
+    <Menu
+      as="div"
+      className="dropdown relative bg-white bg-opacity-50 rounded-md ring-1 ring-violet-300 "
+    >
       <Menu.Button
         onClick={() => setIsOpen(!isOpen)}
         className="dropdown-btn w-full text-left"
@@ -26,14 +29,14 @@ const PropertyDropdown = () => {
         )}
       </Menu.Button>
 
-      <Menu.Items className="dropdown-menu">
+      <Menu.Items className="dropdown-menu  bg-white bg-opacity-75">
         {properties.map((property, index) => {
           return (
             <Menu.Item
               as="li"
               onClick={() => setProperty(property)}
               key={index}
-              className="cursor-pointer hover:text-violet-700 transition"
+              className="cursor-pointer hover:text-violet-600 transition hover:font-bold"
             >
               {property}
             </Menu.Item>

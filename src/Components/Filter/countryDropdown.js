@@ -14,13 +14,13 @@ const StateDropdown = () => {
     <Menu as="div" className="dropdown relative">
       <Menu.Button
         onClick={() => setIsOpen(!isOpen)}
-        className="dropdown-btn w-full text-left"
+        className="dropdown-btn w-full text-left  bg-white bg-opacity-50 rounded-md ring-1 ring-violet-300 "
       >
         <RiMapPinLine className="dropdown-icon-primary" />
         <div>
           <div className="text-[13px]">Location</div>
 
-          <div className="text-[15px] font-medium leading-tight text-gray-700">
+          <div className="text-[15px] font-medium leading-tight text-gray-700 ">
             {country}
           </div>
         </div>
@@ -31,14 +31,14 @@ const StateDropdown = () => {
         )}
       </Menu.Button>
 
-      <Menu.Items className="dropdown-menu">
+      <Menu.Items className="dropdown-menu  bg-white bg-opacity-75">
         {countries.map((country, index) => {
           return (
             <Menu.Item
               as="li"
               onClick={() => setCountry(country)}
               key={index}
-              className="cursor-pointer hover:text-violet-700 transition"
+              className="cursor-pointer hover:text-violet-600 transition hover:font-bold"
             >
               {country}
             </Menu.Item>

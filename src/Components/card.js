@@ -11,10 +11,10 @@ const House1 = ({ house }) => {
     setIsFavorite(!isFavorite);
   };
   return (
-    <div class="p-2">
+    <div class="p-2  ">
       <div class="rounded overflow-hidden shadow-lg hover:shadow-2xl transition">
         <img class="w-full h-56" src={house.image} alt="Mountain" />
-        <div class="px-6 py-4">
+        <div class="px-6 py-4 bg-white bg-opacity-75">
           <div className="">
             <div className="text-lg font-black text-violet-600 mb-2 inline-block ">
               ${house.price}{" "}

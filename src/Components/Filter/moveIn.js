@@ -10,14 +10,11 @@ function MoveIn() {
   };
 
   return (
-    <div className="flex mx-5">
-      <RiCalendarTodoLine className="dropdown-icon-primary inline mt-5" />
+    <div className="dropdown-btn flex w-full text-left  bg-white bg-opacity-50 rounded-md ring-1 ring-violet-300 ">
+      <RiCalendarTodoLine className="dropdown-icon-primary" />
 
       <div className="inline">
-        <label
-          htmlFor="moving"
-          className="block text-gray-500 mt-2 text-[13px]"
-        >
+        <label htmlFor="moving" className="block text-gray-500 text-[13px]">
           When
         </label>
         <input
@@ -26,6 +23,7 @@ function MoveIn() {
           name="moving"
           value={moving}
           onChange={handleDateChange}
+          className=" rounded-md text-sm "
         />
       </div>
     </div>

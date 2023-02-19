@@ -40,7 +40,10 @@ const PriceRangeDropdown = () => {
   ];
 
   return (
-    <Menu as="div" className="dropdown relative">
+    <Menu
+      as="div"
+      className="dropdown relative bg-white bg-opacity-50 rounded-md ring-1 ring-violet-300"
+    >
       <Menu.Button
         onClick={() => setIsOpen(!isOpen)}
         className="dropdown-btn w-full"
@@ -60,14 +63,14 @@ const PriceRangeDropdown = () => {
         )}
       </Menu.Button>
 
-      <Menu.Items className="dropdown-menu ">
+      <Menu.Items className="dropdown-menu bg-white bg-opacity-75">
         {prices.map((price, index) => {
           return (
             <Menu.Item
               as="li"
               onClick={() => setPrice(price.value)}
               key={index}
-              className="cursor-pointer hover:text-violet-700 transition hover:bg-gray-100 "
+              className="cursor-pointer hover:text-violet-600 transition hover:font-bold"
             >
               {price.value}
             </Menu.Item>
