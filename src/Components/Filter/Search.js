@@ -23,7 +23,7 @@ const Search = () => {
       <div className="hidden lg:block w-[1px] h-[60px] bg-gray-300"></div>
 
       <PriceRangeDropdown />
-      <div className="hidden lg:block w-[1px] h-[60px] bg-gray-300"></div>
+      <div className="hidden lg:block w-[1px] h-[60px] bg-gray-300 md:mr-8"></div>
 
       <button
         onClick={() => {
