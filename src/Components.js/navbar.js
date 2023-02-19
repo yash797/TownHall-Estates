@@ -35,7 +35,7 @@ import { NavLink, useLocation } from "react-router-dom";
     ];
 
     return (
-      <div className="fixed w-full bg-gray-100 bg-opacity-80 z-10 top-0 py-1 backdrop-filter backdrop-blur -ml-32 px-32 flex flex-wrap xl:flex-nowrap items-center justify-between ">
+      <div className="fixed w-full bg-gray-100 bg-opacity-80 z-10 top-0 py-1 backdrop-filter backdrop-blur px-10 -ml-12 md:-ml-32 md:px-32 flex flex-wrap xl:flex-nowrap items-center justify-between ">
         <NavLink to="/">
           <img
             src={logo}

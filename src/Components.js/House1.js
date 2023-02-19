@@ -4,24 +4,10 @@ import { FaHeart } from "react-icons/fa";
 import { BiBed, BiBath, BiArea } from "react-icons/bi";
   
 
-// function PropertyCard({ property }) {
-//   const [isLiked, setIsLiked] = useState(false);
-//   const [isFavorite, setIsFavorite] = useState(false);
-
-//   const handleLikeClick = () => {
-//     setIsLiked(!isLiked);
-//   };
-
-//   const handleFavoriteClick = () => {
-//     setIsFavorite(!isFavorite);
-//   };
 const House1 = ({ house }) => {
     const [isLiked, setIsLiked] = useState(false);
     const [isFavorite, setIsFavorite] = useState(false);
 
-    const handleLikeClick = () => {
-      setIsLiked(!isLiked);
-    };
 
     const handleFavoriteClick = () => {
       setIsFavorite(!isFavorite);
