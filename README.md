@@ -1,5 +1,5 @@
-# RealEstateReactApp
+# TownHall Estates
 
 ##Website Link
 
-https://rak-real-estate.netlify.app/
+https://townhall-estates.netlify.app/
