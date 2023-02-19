@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 
- import logo from '../images/house.png'
+ import logo from '../../Assets/house.png'
  
 
 

@@ -27,56 +27,57 @@
   @apply h-10 w-10 fill-current text-violet-500 hover:text-blue-500 border p-2 border-gray-400 rounded-full hover:border-blue-500;
 }
 
-body {
-  /* margin: 0; */
-  
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-*{
+* {
   margin: 0px;
   padding: 0px;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap");
 
-/***fontawesome <script src="https://kit.fontawesome.com/95dc93da07.js"></script> *********/
-
-
-
-body{
-  margin:0px;
+body {
+  margin: 0px;
   padding: 0px;
-  
+
   background-color: #ffffff;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
-*{
+* {
   box-sizing: border-box;
 }
-ul{
+ul {
   list-style: none;
 }
-a{
+a {
   text-decoration: none;
 }
-button{
+button {
   outline: none;
   border: none;
 }
-input{
+input {
   outline: none;
   border: none;
 }
-.logo img{
+.logo img {
   width: 80px;
+}
+::-webkit-scrollbar-track {
+  visibility: hidden;
+  background: transparent;
+}
+
+::-webkit-scrollbar {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#6a0ddb, transparent);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(#3d0fc8e2, transparent);
 }

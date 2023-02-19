@@ -1,8 +1,8 @@
-import React, { useContext} from "react";
+import React, { useContext } from "react";
 
-import Search from "./Search";
+import Search from "./Filter/Search";
 
-import { HouseContext } from "./HouseContext";
+import { HouseContext } from "./houseContent";
 
 const Hero = () => {
   const { search, handleSearch } = useContext(HouseContext);

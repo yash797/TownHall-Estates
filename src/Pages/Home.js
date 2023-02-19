@@ -1,7 +1,7 @@
 import React from "react";
 
-import Poster from "../Components.js/Hero";
-import HouseList from "../Components.js/HouseList";
+import Poster from "../Components/hero";
+import HouseList from "../Components/cardList";
 
 const Home = () => {
   return (

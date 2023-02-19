@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { HouseContext } from "./HouseContext";
+import { HouseContext } from "../houseContent";
 import { RiCalendarTodoLine } from "react-icons/ri";
 
 function MoveIn() {

@@ -1,15 +1,14 @@
-import React, { useState, useContext } from 'react';
-
+import React, { useState, useContext } from "react";
 
 import {
   RiWallet3Line,
   RiArrowDownSLine,
   RiArrowUpSLine,
-} from 'react-icons/ri';
+} from "react-icons/ri";
 
-import { Menu } from '@headlessui/react';
+import { Menu } from "@headlessui/react";
 
-import { HouseContext } from './HouseContext';
+import { HouseContext } from "../houseContent";
 
 const PriceRangeDropdown = () => {
   const { price, setPrice } = useContext(HouseContext);
@@ -17,26 +16,26 @@ const PriceRangeDropdown = () => {
 
   const prices = [
     {
-      value: 'Price range (any)',
+      value: "Price range (any)",
     },
     {
-      value: '0 - 1000',
+      value: "0 - 1000",
     },
-   
+
     {
-      value: '1000 - 2000',
+      value: "1000 - 2000",
     },
-    
+
     {
-      value: '2000 - 3000',
+      value: "2000 - 3000",
     },
-    
+
     {
-      value: '3000 - 4000',
+      value: "3000 - 4000",
     },
-   
+
     {
-      value: '4000 - 5000',
+      value: "4000 - 5000",
     },
   ];
 
@@ -50,7 +49,9 @@ const PriceRangeDropdown = () => {
         <div>
           <div className="text-[13px]">Price Range (in $)</div>
 
-          <div className="text-[15px] font-medium leading-tight text-left text-gray-700">${price}</div>
+          <div className="text-[15px] font-medium leading-tight text-left text-gray-700">
+            ${price}
+          </div>
         </div>
         {isOpen ? (
           <RiArrowUpSLine className="dropdown-icon-secondary" />

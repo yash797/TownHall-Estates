@@ -1,15 +1,14 @@
-import React, { useContext } from 'react';
+import React, { useContext } from "react";
 
 import MoveIn from "./moveIn";
 
-import StateDropDown from './countryDropdown';
-import PropertyDropdown from './propertyDropdown;';
-import PriceRangeDropdown from './priceDropdown';
+import StateDropDown from "./countryDropdown";
+import PropertyDropdown from "./propertyDropdown;";
+import PriceRangeDropdown from "./priceDropdown";
 
-import { HouseContext } from './HouseContext';
+import { HouseContext } from "../houseContent";
 
-import { RiSearch2Line } from 'react-icons/ri';
-
+import { RiSearch2Line } from "react-icons/ri";
 
 const Search = () => {
   const { handleClick } = useContext(HouseContext);
